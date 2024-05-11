@@ -21,7 +21,7 @@
     <scala.version>2.12.7</scala.version>
     <scala.compat.version>2.12</scala.compat.version>
     <spec2.version>4.2.0</spec2.version>
-    <flink.version>1.19.0</flink.version>
+    <flink.version>1.17.0</flink.version>
     <scope.compile>compile</scope.compile>
     <scope.provided>provided</scope.provided>
     <kafka.version>3.7.0 </kafka.version>
@@ -46,19 +46,6 @@
       <version>${kafka.version}</version>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>org.apache.flink</groupId>-->
-<!--      <artifactId>flink-streaming-scala_2.12</artifactId>-->
-<!--      <version>${flink.version}</version>-->
-<!--      <scope>${scope.compile}</scope>-->
-<!--    </dependency>-->
-
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-table-api-scala_2.12</artifactId>
-      <version>${flink.version}</version>
-      <scope>${scope.compile}</scope>
-    </dependency>
 
     <dependency>
       <groupId>org.apache.flink</groupId>
@@ -67,19 +54,21 @@
       <scope>${scope.compile}</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-scala_2.12</artifactId>
-      <version>${flink.version}</version>
-      <scope>${scope.compile}</scope>
-    </dependency>
 
     <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-sql-client</artifactId>
-      <version>${flink.version}</version>
-      <scope>${scope.compile}</scope>
+      <groupId>org.javatuples</groupId>
+      <artifactId>javatuples</artifactId>
+      <version>1.2</version>
     </dependency>
+
+
+
+    <!--    <dependency>-->
+<!--      <groupId>org.apache.flink</groupId>-->
+<!--      <artifactId>flink-sql-client</artifactId>-->
+<!--      <version>${flink.version}</version>-->
+<!--      <scope>${scope.compile}</scope>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>org.apache.flink</groupId>
@@ -88,39 +77,14 @@
       <scope>${scope.compile}</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-table-planner_2.12</artifactId>
-      <version>${flink.version}</version>
-      <scope>${scope.compile}</scope>
-    </dependency>
 
-<!--    <dependency>-->
+
+    <!--    <dependency>-->
 <!--      <groupId>org.apache.flink</groupId>-->
-<!--      <artifactId>flink-table-planner-blink_2.12</artifactId>-->
-<!--      <version>1.13.6</version>-->
-<!--      <scope>test</scope>-->
+<!--      <artifactId>flink-table-planner_2.12</artifactId>-->
+<!--      <version>${flink.version}</version>-->
+<!--      <scope>${scope.compile}</scope>-->
 <!--    </dependency>-->
-
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-table-planner_2.12</artifactId>
-      <version>${flink.version}</version>
-      <scope>${scope.compile}</scope>
-    </dependency>
-
-
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-table-runtime</artifactId>
-      <version>${flink.version}</version>
-      <scope>${scope.compile}</scope>
-    </dependency>
-
-
-
-
-
 
     <!-- Test -->
     <dependency>
